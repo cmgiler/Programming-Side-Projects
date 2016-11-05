@@ -1,0 +1,1 @@
+Simple program which generates a list of strings with random letters, depending on user parameters (user selects 'consonant' or 'vowel' for each character, or lets it be completely random)
