@@ -1,0 +1,3 @@
+([('app',
+   '/Users/chrisgiler_developer/version-control/Udemy/Programming-SideProjects/Database-Application/dist/app',
+   'EXECUTABLE')],)
