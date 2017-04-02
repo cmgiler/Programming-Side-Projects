@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="7A66618C-D973-48ED-A107-C0C8539D27FE">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="256.917969,45.0" Width="334.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Price of an item in a web-store for a user under a price limit</String>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="94.0,154.0" Width="94.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Creates an alert</String>
+            <ConnectedNoteIDs>3</ConnectedNoteIDs>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="223.0,154.0" Width="108.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Gives us an e-mail</String>
+            <ConnectedNoteIDs>1, 4</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="366.0,154.0" Width="171.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Gives us a price and item URL</String>
+            <ConnectedNoteIDs>3, 5</ConnectedNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="572.0,154.0" Width="110.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>We check the price</String>
+            <ConnectedNoteIDs>4, 6</ConnectedNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="572.0,211.0" Width="112.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>If the price is &lt; limit</String>
+            <ConnectedNoteIDs>5, 7</ConnectedNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="371.0,211.0" Width="166.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Notify the user through e-mail</String>
+            <ConnectedNoteIDs>6, 8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="194.0,211.0" Width="142.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Repeat every 10 minutes</String>
+            <ConnectedNoteIDs>7</ConnectedNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="114.021307,323.090909" Width="33.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Alert</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="83.5625,373.0" Width="93.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>E-mail
+Price limit
+Item (created with the URL)</String>
+            <ConnectedNoteIDs>9</ConnectedNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="245.571023,325.683949" Width="64.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Web-store</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="197.651278,380.787642" Width="157.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>How to check item’s prices?</String>
+            <ConnectedNoteIDs>11</ConnectedNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="435.142756,323.325994" Width="40.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Users</String>
+            <ConnectedNoteIDs>14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="374.027699,382.736506" Width="159.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>E-mails (for notiications)
+Name/password/username?</String>
+            <ConnectedNoteIDs>13</ConnectedNoteIDs>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="616.227273,320.960938" Width="32.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Item</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="561.020597,374.960938" Width="141.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+            </Appearance>
+            <String>Name
+Price (load from website)
+URL associated</String>
+            <ConnectedNoteIDs>15</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>1, 3-9, 11-16</AutoFit>
+    <NoteStyles>
+        <Style Name="Title Text" ID="AA7F6A45-FCC9-4BA4-991D-AF822A27C60C" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="0DF28079-5C78-4FBA-8FEF-D845B2D60096" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="50E4B6DB-86AA-4B9A-BE0C-B67246937B0B" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Yellow Bubble" ID="96148D34-0C53-496E-8903-7E213752E6E8" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="5FB684B3-FDD1-48DE-BBDD-10D1AC2745CB" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Blue Bubble" ID="7087656C-02F4-46E2-9857-07F56E661375" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="B5F1F0F2-86C8-4B06-B603-4376F8787D98" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
