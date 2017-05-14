@@ -53,7 +53,7 @@ class Store(object):
         :param url: The item's URL 
         :return: a Store, or raises a StoreNotFoundException if no store matches the url
         """
-        for i in range(0, len(url)+1):
+        for i in range(1, len(url)+1):
             try:
                 store = cls.get_by_url_prefix(url[:i])
                 return store

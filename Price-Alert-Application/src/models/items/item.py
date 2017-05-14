@@ -27,6 +27,9 @@ class Item(object):
         content = request.content
         soup = BeautifulSoup(content, 'html.parser')
         element = soup.find(self.tag_name, self.query)
+        print self.tag_name
+        print self.query
+        print element
         string_price = element.text.strip()
 
         pattern = re.compile('(\d+.\d+)') # $3,499.00

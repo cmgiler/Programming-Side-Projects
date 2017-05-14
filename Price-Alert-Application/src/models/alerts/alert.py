@@ -44,7 +44,7 @@ class Alert(object):
 
     def json(self):
         return {
-            'id': self._id,
+            '_id': self._id,
             'price_limit': self.price_limit,
             'last_checked': self.last_checked,
             'user_email': self.user_email,
@@ -61,3 +61,11 @@ class Alert(object):
     def send_email_if_price_reached(self):
         if self.item.price < self.price_limit:
             self.send()
+
+    @classmethod
+    def find_by_user_email(cls, user_email):
+        return [cls(**elem) for elem in Database.find(AlertConstants.COLLECTION, {'user_email': user_email})]
+
+    @classmethod
+    def find_by_id(cls, alert_id):
+        return cls(**Database.find_one(AlertConstants.COLLECTION, {'_id': alert_id}))
